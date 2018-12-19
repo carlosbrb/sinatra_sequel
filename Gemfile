@@ -8,9 +8,9 @@ gem 'rake'
 gem 'require_all'
 
 group :development do
-	gem 'rubocop'
-	gem 'shotgun'
-	gem 'pry'
+  gem 'rubocop'
+  gem 'shotgun'
+  gem 'pry'
 end
 
 group :test do

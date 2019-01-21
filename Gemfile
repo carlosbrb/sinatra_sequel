@@ -1,11 +1,14 @@
 source 'https://rubygems.org'
 
-ruby '2.5.3'
+ruby '2.6.0'
 
 gem 'sinatra', '~> 2.0.4'
+gem 'sinatra-cross_origin'
 gem 'sequel', '~> 5.15.0'
+gem 'pg'
 gem 'rake'
 gem 'require_all'
+gem 'jwt'
 
 group :development do
   gem 'rubocop'
@@ -14,4 +17,6 @@ group :development do
 end
 
 group :test do
+  gem 'rack-test'
+  gem 'rspec'
 end

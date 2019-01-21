@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+timestamp = Time.now.strftime('%Y%m%d%H%M%S')
+
+puts "\n== Creating migration =="
+raise 'Please specify a file name' if ARGV[0].nil?
+filename = "db/migrations/#{timestamp}_#{ARGV[0]}.rb"
+File.open(filename, 'w') do |file|
+  file.write("Sequel.migration do\n  change do\n  end\nend\n")
+end

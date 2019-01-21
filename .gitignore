@@ -1,1 +1,3 @@
 .ruby-version
+.development.env
+.test.env

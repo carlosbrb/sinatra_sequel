@@ -1,3 +1,3 @@
 #!/bin/bash
 source .development.env
-shotgun
+bundle exec shotgun

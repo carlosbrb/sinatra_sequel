@@ -21,7 +21,7 @@ export DB_NAME=[your database name]
 And then run
 
 ```
-# script/start_dev
+# bin/start_dev
 ```
 
 to start your development environment

@@ -1,16 +1,14 @@
+require 'json'
 require 'sinatra'
 require 'sinatra/cross_origin'
 require 'sequel'
 require 'sequel/plugins/serialization'
-require 'json'
+Sequel::Model.plugin :json_serializer
 require 'require_all'
 require_relative 'db/connect'
 require_relative 'routes/init'
 require_relative 'models/init'
 require_relative 'helpers/init'
-
-
-Sequel::Model.plugin :json_serializer
 
 class App < Sinatra::Base
   configure do

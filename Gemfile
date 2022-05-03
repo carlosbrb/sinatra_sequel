@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.6.5'
 
-gem 'sinatra', '~> 2.0.4'
+gem 'sinatra', '~> 2.2.0'
 gem 'sinatra-cross_origin'
 gem 'sequel', '~> 5.15.0'
 gem 'pg'
